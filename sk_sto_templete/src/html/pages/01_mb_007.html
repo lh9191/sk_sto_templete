@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap wrap_white">
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_step">
+            <div class="flow">
+                <div class="title">Identity Verification</div>
+                <a href="#" class="page_back"></a>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="step">
+                            <!-- PB-018 step 명칭 변경-->
+                            <div class="step-item step-first">
+                                <i class="circle on"></i>
+                                <span>Profile</span>
+                            </div>
+                            <div class="step-item step-3-2">
+                                <i class="circle off"></i>
+                                <span>Verification</span>
+                            </div>
+                            <div class="step-item step-last">
+                                <i class="circle off"></i>
+                                <span>Fnish</span>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-form-title first">Details of Executive Board Members</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <p class="title-sm">Signer Information</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="First" value="">
+                            <label for="First">First Name</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="text" id="Last" value="">
+                            <label for="Last">Last Name</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Director</option>
+                                <option value="2">Shareholder</option>
+                                <option value="3">Ultimate Beneficial Owner</option>
+                            </select>
+                            <label>Job Position</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Nationality1</option>
+                                <option value="2">Nationality2</option>
+                                <option value="3">Nationality3</option>
+                            </select>
+                            <label>Nationality</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Country1</option>
+                                <option value="2">Country2</option>
+                                <option value="3">Country3</option>
+                            </select>
+                            <label>Country</label>
+                        </div>
+                    </div>
+                    <!--2019-09-25 : input 및 select 추가-->
+                    <!--Nationality-->
+                    <!--Country-->
+
+                    <!--street address-->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="Street1" value="">
+                            <label for="Street1">Street address 1</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="text" id="Street2" value="">
+                            <label for="Street2">Street address 2 (optional)</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <!--city & state-->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="City" value="">
+                            <label for="City">City</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="text" id="State" value="">
+                            <label for="State">State / Province / Region</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="Zip" value="">
+                            <label for="Zip">Zip code</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+
+                    </div>
+                    <!--identity-->
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot prefix-dot">Identity</p>
+                        </div>
+
+                        <div class="file-field input-field col s6">
+                            <!--select passport-->
+                            <div class="wrap_select">
+                                <select>
+                                    <option value="" disabled selected>Passport</option>
+                                    <option value="1">Passport1</option>
+                                    <option value="2">Passport2</option>
+                                    <option value="3">Passport3</option>
+                                </select>
+                            </div>
+                            <!--uplode passport image-->
+                            <div class="wrap_input_file">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path" type="text">
+                                </div>
+                                <div class="check">
+                                    <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px" height="15px" viewBox="0 0 27.708 21.553" enable-background="new 0 0 27.708 21.553" xml:space="preserve">
+                                            <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10" points="1.748,11.527 8.342,18.121 25.96,1.977 "></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//2019-09-25 : input 및 select 추가-->
+                    <div class="row">
+                        <div class="col s12">
+                            <p class="title-sm">Representatives Information</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="user-list">
+                                <div class="list">
+                                    <div class="name"><a href="#">Jennifer Lynn Lopez</a></div>
+                                    <div class="desc">
+                                        <span>CEO</span><span>010-000-0000</span><span>Robert@gmail.com</span><span>USA</span>
+                                    </div>
+                                    <div class="address">2111 7th Ave, Seattle, WA 98121, USA</div>
+                                    <div class="btn-remove"><a href="#"><i class="fal fa-times"></i></a></div>
+                
+                                </div>
+                                <div class="list">
+                                    <div class="name"><a href="#">Robert Downey Jr</a></div>
+                                    <div class="desc">
+                                        <span>CEO</span><span>010-000-0000</span><span>Robert@gmail.com</span><span>USA</span>
+                                    </div>
+                                    <div class="address">2111 7th Ave, Seattle, WA 98121, USA</div>
+                                    <div class="btn-remove"><a href="#"><i class="fal fa-times"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col s12">
+                            <p class="right-align"><a href="#" class="btn btn-light">+ Add another</a></p>
+                        </div>
+                    </div>
+                    <div class="row row-large">
+                        <div class="col s12 center-align">
+                            <p><a href="#" class="btn btn-white btn-large">Back</a> <a href="#" class="btn btn-large">Submit</a></p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- //module : contents - 페이지 별 분리 영역-->
+    </div>
+    <style>
+        .user-list {
+            position: relative;
+        }
+        .btn-light{
+            padding: 0 38px;
+        }
+        .wrap_select{
+            width: 200px;
+            margin-right: 10px;
+            float: left;
+        }
+        /* PB-014 css 수정*/
+        .wrap_input_file{
+            width: 330px;
+            float: left;
+        }
+        .user-list .list {
+            margin-bottom: 20px;
+            height: 120px;
+            border: solid 1px #c5c5c5;
+            background-color: #fbfbff;
+            position: relative;
+        }
+        /*//2019-09-25 : css 수정*/
+        .user-list .list .name {
+            position: absolute;
+            top: 27px;
+            left: 30px;
+        }
+        
+        .user-list .list .name a {
+            font-size: 24px;
+            color: #2e3ca8;
+            text-decoration: underline;
+        }
+        
+        .user-list .list .desc {
+            position: absolute;
+            top: 27px;
+            right: 100px;
+        }
+        
+        .user-list .list .desc span {
+            font-size: 20px;
+            line-height: 25px;
+            text-align: right;
+            color: #333333;
+        }
+        
+        .user-list .list .desc span:before {
+            content: '';
+            display: inline-block;
+            height: 20px;
+            border-left: 1px solid #C5C5C5;
+            margin-right: 5px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        
+        .user-list .list .desc span:first-child:before {
+            display: none;
+        }
+        
+        .user-list .list .address {
+            position: absolute;
+            bottom: 27px;
+            left: 30px;
+            font-size: 20px;
+            color: #333333;
+        }
+        
+        .user-list .list .btn-remove {
+            position: absolute;
+            top: 45px;
+            right: 44px;
+        }
+        
+        .user-list .list .btn-remove a i {
+            font-size: 30px;
+            color: #333333;
+        }
+        
+        .add-user {
+            border-top: 2px solid #2e3ca8;
+            border-bottom: 2px solid #2e3ca8;
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+        }
+    
+    
+    </style>
+    
+</body>
+</html>
+
+

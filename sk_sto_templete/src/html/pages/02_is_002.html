@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap">
+    @@include('../include/header.html')
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_login">
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col s12 info">
+                            <div class="card-form-title">Lim's Chair Token<i class="i_state  i_state_live">Live</i></div>
+                            <div class="sub"><span>IP Right</span><span>Company</span></div>
+                            <div class="add">Total Supply : <span class="count">100,000</span><span class="symbol">LIM</span></div>
+                        </div>
+                    </div>
+                    <div class="row row-mb-xl">
+                        <!--chart-->
+                        <div class="col s8">
+                            <div class="row">
+                                <div class="col s6">
+                                    <div id="pieChart1" class="pie_chart">
+                                        <script>
+                                            // PB-031 색상 변경
+                                            var colors = ['#0DB2A1', '#9962FF', '#FF5E80', '#FF9700', '#8BC24A'];
+                                            var pieChart1 = Highcharts.chart("pieChart1", {
+                                                description: "token holder",
+                                                credits: false,
+                                                exporting: {
+                                                    buttons: {
+                                                        contextButton: {
+                                                            enabled: false
+                                                        }
+                                                    }
+                                                },
+                                                chart: {
+                                                    type: 'pie',
+                                                    height: 346,
+                                                    spacingTop: 10,
+                                                    style: {
+                                                        fontFamily: 'Rubik',
+                                                        fontWeight: 'bold',
+                                                    }
+                                                },
+                                                title: {
+                                                    text: "Token<br>Holders",
+                                                    margin: 0,
+                                                    y: -58,
+                                                    x:0,
+                                                    align: 'center',
+                                                    verticalAlign: 'middle',
+                                                },
+                                                tooltip: {
+                                                    pointFormat: '<b>{point.y}</b><b>%</b>'
+                                                },
+                                                legend: {
+                                                    itemStyle: {
+                                                        fontSize: '1.8rem',
+                                                        fontWeight: 'normal'
+                                                    },
+                                                    enabled: true,
+                                                    align: 'center',
+                                                    width: 254,
+                                                    itemWidth: 127,
+                                                    itemMarginTop: 0,
+                                                    itemMarginBottom: 6,
+                                                    lineHeight: 2,
+                                                    verticalAlign: 'bottom',
+                                                    layout: 'horizontal',
+                                                },
+                                                plotOptions: {
+                                                    pie: {
+                                                        center: ['50%', '50%'],
+                                                        showInLegend: true,
+                                                        color: "#ffffff",
+                                                        dataLabels: {
+                                                            enabled: true,
+                                                            format: '{point.y}%',
+                                                            distance: -20,
+                                                            style: {
+                                                                fontWeight: 'normal',
+                                                                fontSize: '1.6rem',
+                                                                textAlign : 'center',
+                                                                fontFamily: 'Nanum Square',
+                                                                textOutline: false,
+                                                                color: "#ffffff",
+                                                            },
+                                                        }
+                                                    },
+                                                    series: {
+                                                        size: '100%',
+                                                        innerSize: '60%',
+                                                        style: {
+                                                            fontSize: '1.2rem'
+                                                        }
+                                                    }
+                                                },
+
+                                                series: [{
+                                                    name: 'VOC 채널 비율',
+                                                    data: [{
+                                                        name: 'MS. LIM',
+                                                        y: 64,
+                                                        color: colors[0]
+                                                    }, {
+                                                        name: 'Mr. Daniel',
+                                                        y: 22,
+                                                        color: colors[1]
+                                                    },{
+                                                        name: 'Mr. willy',
+                                                        y: 12,
+                                                        color: colors[2]
+                                                    }, {
+                                                        name: 'Mr. Apple',
+                                                        y: 4,
+                                                        color: colors[3]
+                                                    }, {
+                                                        name: 'etc',
+                                                        y: 5,
+                                                        color: colors[4]
+                                                    }]
+                                                }]
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="col s6">
+                                    <div id="pieChart2" class="pie_chart">
+                                        <script>
+                                            // PB-031 색상 변경
+                                            var colors = ['#0DB2A1', '#9962FF', '#FF5E80', '#FF9700', '#8BC24A'];
+                                            var pieChart2 = Highcharts.chart("pieChart2", {
+                                                description: "investment status",
+                                                credits: false,
+                                                exporting: {
+                                                    buttons: {
+                                                        contextButton: {
+                                                            enabled: false
+                                                        }
+                                                    }
+                                                },
+                                                chart: {
+                                                    type: 'pie',
+                                                    height: 346,
+                                                    spacingTop: 10,
+                                                    style: {
+                                                        fontFamily: 'Rubik',
+                                                        fontWeight: 'bold',
+                                                    }
+                                                },
+                                                title: {
+                                                    text: "Investment<br>Status",
+                                                    margin: 0,
+                                                    y: -58,
+                                                    x:0,
+                                                    align: 'center',
+                                                    verticalAlign: 'middle',
+                                                },
+                                                tooltip: {
+                                                    pointFormat: '<b>{point.y}</b>'
+                                                },
+                                                legend: {
+                                                    itemStyle: {
+                                                        fontSize: '1.8rem',
+                                                        fontWeight: 'normal'
+                                                    },
+                                                    enabled: true,
+                                                    align: 'center',
+                                                    itemMarginTop: 0,
+                                                    itemMarginBottom: 6,
+                                                    lineHeight: 2,
+                                                    verticalAlign: 'bottom',
+                                                    layout: 'vertical',
+                                                },
+                                                plotOptions: {
+                                                    pie: {
+                                                        center: ['50%', '50%'],
+                                                        showInLegend: true,
+                                                        color: "#ffffff",
+                                                        dataLabels: {
+                                                            enabled: true,
+                                                            format: '{point.y}%',
+                                                            distance: -20,
+                                                            style: {
+                                                                fontWeight: 'normal',
+                                                                fontSize: '1.6rem',
+                                                                textAlign : 'center',
+                                                                fontFamily: 'Nanum Square',
+                                                                textOutline: false,
+                                                                color: "#ffffff",
+                                                            },
+                                                        }
+                                                    },
+                                                    series: {
+                                                        size: '100%',
+                                                        innerSize: '60%',
+                                                        style: {
+                                                            fontSize: '1.2rem'
+                                                        }
+                                                    }
+                                                },
+
+                                                series: [{
+                                                    name: 'VOC 채널 비율',
+                                                    data: [{
+                                                        name: 'Uninvested (10)',
+                                                        y: 10,
+                                                        color: colors[0]
+                                                    }, {
+                                                        name: 'In-Progress / For sale (10)',
+                                                        y: 10,
+                                                        color: colors[1]
+                                                    },{
+                                                        name: 'Confirmed (6)',
+                                                        y: 6,
+                                                        color: colors[2]
+                                                    }]
+                                                }]
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--chart-->
+                        <div class="col col-pl-md col-bd s4">
+                            <div class="dl-vertical">
+                                <div class="spec">
+                                    <span class="title">Sale Period</span>
+                                    <span class="desc">04/04/2020 ~ 04/04/2020</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="title">Token Price</span>
+                                    <span class="desc">$3 SGD</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="title">Lockup period</span>
+                                    <span class="desc">3Years (11/11/2020)</span>
+                                </div>
+                                <p class="area-btn center-align">
+                                    <a href="#" class="btn" style="width: 150px;">overview</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-form-title card-form-title-sub"><span>List of Investors</span><a href="#" class="btn btn-light">+ Investor Invitation</a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="wrap_list row">
+                            <div class="col s12 vertical_middle">
+                                <div class="list_invest">
+                                    <div class="investor investor_light">
+                                        <div class="name"><i class="fal fa-exclamation-circle i_error"></i><span>Jennifer Shrader Lawrence</span></div>
+                                        <div class="investor_info">
+                                            <div class="email">helloworld@gmail.com</div>
+                                            <div class="stake stake_light"><b><span class="light">0</span>/<span class="light">2,000</span></b> LIM</div>
+                                        </div>
+                                    </div>
+                                    <!--진행단계-->
+                                    <div class="step step-medium ">
+                                        <div class="step-item step-first">
+                                            <i class="circle on"></i>
+                                            <span>Sign<br>contract</span>
+                                            <!--<a href="#" class="btn btn-sm btn-white">Detail</a>-->
+                                        </div>
+                                        <div class="step-item step-3-2">
+                                            <i class="circle off"></i>
+                                            <span>Fund<br>deposit</span>
+                                            <!--<a href="#" class="btn btn-sm btn-white">Detail</a>-->
+                                        </div>
+                                        <div class="step-item step-last">
+                                            <i class="circle off"></i>
+                                            <span>Project<br>transfer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 vertical_middle">
+                                <div class="list_invest">
+                                    <div class="investor">
+                                        <div class="name"><i class="fal fa-check-circle i_point"></i><span>Hayo cho</span></div>
+                                        <div class="investor_info">
+                                            <div class="email">helloworld@gmail.com</div>
+                                            <div class="stake "><b><span class="point">100/</span><span class="dark">2,000</span></b> LIM</div>
+                                        </div>
+                                    </div>
+                                    <!--진행단계-->
+                                    <div class="step step-medium">
+                                        <div class="step-item step-first">
+                                            <i class="circle check"></i>
+                                            <span>Sign<br>contract</span>
+                                            <!--<a href="#" class="btn btn-sm btn-white">Detail</a>-->
+                                        </div>
+                                        <div class="step-item step-3-2">
+                                            <i class="circle on"></i>
+                                            <span>Fund<br>deposit</span>
+                                            <!--<a href="#" class="btn btn-sm btn-white">Detail</a>-->
+                                        </div>
+                                        <div class="step-item step-last">
+                                            <i class="circle off"></i>
+                                            <span>Project<br>transfer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 vertical_middle">
+                                <div class="list_invest">
+                                    <div class="investor">
+                                        <div class="name"><i class="fal fa-check-circle i_point"></i><span>Daniel Henney</span></div>
+                                        <div class="investor_info">
+                                            <div class="email">Daniel Henney@gmail.com</div>
+                                            <div class="stake "><b><span class="point">100/</span><span class="dark">2,000</span></b> LIM</div>
+                                        </div>
+                                    </div>
+                                    <!--진행단계-->
+                                    <div class="step step-medium step-medium-btn">
+                                        <div class="step-item step-first">
+                                            <i class="circle check"></i>
+                                            <span>Sign<br>contract</span>
+                                            <a href="#" class="btn btn-sm btn-white">Detail</a>
+                                        </div>
+                                        <div class="step-item step-3-2">
+                                            <i class="circle check"></i>
+                                            <span>Fund<br>deposit</span>
+                                            <a href="#" class="btn btn-sm btn-white">Detail</a>
+                                        </div>
+                                        <div class="step-item step-last">
+                                            <i class="circle on"></i>
+                                            <span>Project<br>transfer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+    @@include('../include/footer.html')
+</div>
+<style>
+    .card .card-form-title {
+        position: relative;
+        margin-bottom: 0px;
+        margin-top: 17px;
+    }
+    .card .card-form-title.card-form-title-sub {
+           margin: 0;
+       }
+    .card .card-form-title.card-form-title-sub span{
+        font-size: 28px;
+        font-family: var(--font);
+        font-weight: 600;
+    }
+    .card .card-form-title.card-form-title-sub .btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .card .card-form-title+.sub span{
+        position: relative;
+        font-family: var(--font);
+        font-size: 20px;
+        margin-right: 20px;
+        line-height: 24px;
+    }
+    .card .card-form-title+.sub span:last-of-type::after{
+        content: none;
+    }
+    .card .card-form-title+.sub span::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 20px;
+        right: -10px;
+        top: 3px;
+        background: #C5C5C5;
+        background: var(--color-bg-light);
+    }
+    .card .info .add {
+        top: 28px;
+        vertical-align: bottom;
+    }
+    .i_state{
+        margin-left: 10px;
+        position: relative;
+        top: -5px;
+    }
+    .card .info .add .count, .card .info .add .symbol{
+        vertical-align: bottom;
+    }
+</style>
+</body>
+</html>
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap">
+    @@include('../include/header.html')
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_password">
+            <!--2019-09-25 : 문구 삭제-->
+            <div class="row">
+                <div class="col s12 ">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12">
+                                    <p class="card-title">Let's reset your password</p>
+                                    <!-- PB-013 문구 추가 -->
+                                    <p>Use 8 or more characters with a mix of letters, numbers & symbols</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <!-- PB-013 문구 삭제 -->
+                                    <input type="password" id="Password" value="">
+                                    <label for="Password">New Password</label>
+                                    <span class="helper-text" data-error="error massage"></span>
+                                </div>
+                            </div>
+                            <div class="row row-mb-md">
+                                <div class="input-field col s12">
+                                    <input type="password" id="Confirm" value="">
+                                    <!--2019-09-25 : 문구수정-->
+                                    <label for="Confirm">Confirm</label>
+                                    <span class="helper-text" data-error="error massage"></span>
+                                </div>
+
+                            </div>
+                            <!--<div class="row">
+                                <div class="col s12">
+                                    <p class="description">Use 8 or more characters with a mix of letters,<br>numbers & symbols</p>
+                                </div>
+                            </div>-->
+
+                            <div class="row">
+                                <div class="col s12">
+                                    <!--2019-09-25 : 버튼 문구 수정-->
+                                    <a href="#" class="btn btn-block btn-large">Reset password</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+    @@include('../include/footer.html')
+</div>
+<style>
+    .page_password .title {
+        font-size: 32px;
+        line-height: 48px;
+        color: #333333;
+        padding-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .page_password .title span {
+                font-family: var(--font);
+        font-weight: 700;
+        color: #2e3ca8;
+    }
+    /*2019-09-25 : 마진 수정*/
+    .page_password .card {
+        position: relative;
+        width: 440px;
+        margin: 165px auto 84px;
+    }
+
+    .page_password .card .card-content {
+        padding: 42px 40px 22px;
+    }
+
+    .page_password .card .card-title {
+        color: #2E3CA8;
+        font-size: 20px;
+    }
+    .page_password .card .description {
+        margin-bottom: 20px;
+    }
+</style>
+</body>
+</html>
+
+

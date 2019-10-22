@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html', {
+"folder" : "guide"
+})
+<body>
+<div id="wrap">
+    <div id="container" class="container">
+        <div class="page_guide">
+            <div id="contents" class="contents">
+                <h1 class="title">component : step</h1>
+                <h2 class="title_sub">step 프로세스</h2>
+                <div class="area area_guide">
+                    <p class="desc">step은 단계를 표기할때 사용한다.</p>
+                    <p class="desc">1번째 클래스는 "step-first" 마지막 클래스는 "step-last"로 정의 한다.</p>
+                    <p class="desc">중간의 클래스는 "step-전체-순번"로 표기한다</p>
+                    <p class="desc">"step-3-2"는 3개중 2번째 순번을 의미한다.</p>
+                    <p class="desc">.dim-fixed는 별도로 화면에 블랙 레이어를 구축 할때 사용한다.</p>
+                    <p class="desc">.dim-fixed를 사용 시에는 &lt; body style="overflow: hidden" &gt; 속성을 추가 해야한다.</p>
+                    <div class="component">
+                        
+                        <div class="dim-fixed"></div>
+                        
+                        <div class="popup_wrap" style="display: block;">
+                            <div class="popup popup-sm">
+                                <div class="popup_body popup_body_alert vertical_middle">
+                                    <div>
+                                        <span class="bold">Would you like to register?</span><br>You'll automatically receive an email when your project is registered.
+                                    </div>
+                                </div>
+                                <div class="popup_btn_wrap btn_2 clearfix">
+                                    <a href="#" class="btn btn-lined">Cancel</a>
+                                    <a href="#" class="btn">Confirm</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup_wrap" style="display: none;">
+                            <div class="popup popup-sm">
+                                <div class="popup_body popup_body_alert vertical_middle">
+                                    <div class="bold">registration is complete</div>
+                                </div>
+                                <div class="popup_btn_wrap clearfix">
+                                    <a href="#" class="btn">Confirm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

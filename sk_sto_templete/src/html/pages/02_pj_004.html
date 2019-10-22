@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap wrap_white">
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents ">
+            <div class="flow">
+                <div class="title">Start a project</div>
+                <a href="#" class="page_back"></a>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="step col s8 offset-s2">
+                            <div class="step-item step-first">
+                                <i class="circle check"></i>
+                                <span>Asset<br>Detail</span>
+                            </div>
+                            <div class="step-item step-4-2">
+                                <i class="circle on"></i>
+                                <span>Sale Configuration</span>
+                            </div>
+                            <div class="step-item step-4-3">
+                                <i class="circle off"></i>
+                                <span>Investor Invitation<br><span class="f-light-gray">(optional)</span></span>
+                            </div>
+                            <div class="step-item step-last">
+                                <i class="circle off"></i>
+                                <span>Final Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-form-title">Token Information</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="Name" value="">
+                            <label for="Name">Token Title</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="text" id="Name" value="">
+                            <label for="Name">Token Symbol <a href="#" class="tooltip"><i class="fal fa-info-circle"></i><span class="tooltip-box">The project key is used as the name of the token.<br>Choose something that is easy to understand and easy to type.<br>(Maximum 3 letters)</span></a></label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6 ">
+                            <i class="unit-text">LIM</i>
+                            <input type="text" id="total" value="" class="right-align unit">
+                            <label for="total">Total Number of Tokens
+                                <a href="#" class="_tooltip tooltip" data-tooltip="How many tokens do you want to issue?"><i class="fal fa-info-circle"></i><span class="tooltip-box">How many tokens do you want to issue?</span></a></label>
+                        </div>
+                        <div class="input-field col s6 ">
+                            <i class="unit-text">SGD</i>
+                            <input type="text" id="Price" value="" class="right-align unit">
+                            <label for="Price">Token Price</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6 ">
+                            <i class="unit-text">LIM</i>
+                            <input type="text" id="minimum" value="" class="right-align unit">
+                            <label for="minimum">Minimum Purchase</label>
+                        </div>
+                        <!-- PB-026 Sale Method 항목은 Minimum Purchase 옆으로-->
+                        <div class="input-field col s6">
+                            <select disabled>
+                                <option value="1">Private</option>
+                            </select>
+                            <label>Sale Method</label>
+                        </div>
+                    </div>
+                    <div class="row date-range">
+                        <div class="input-group date input-field col s3" data-provide="datepicker" data-date-today-highlight="true" z>
+                            <input type="text">
+                            <div class="input-group-addon">
+                                <span class="fal fa-calendar-alt"></span>
+                            </div>
+                            <label style="transform: translateY(-14px) scale(0.8);transform-origin: 0 0;">Token Sale Period</label>
+                        </div>
+                        <div class="bar"> ~</div>
+                        <div class="input-group date input-field col s3" data-provide="datepicker" data-date-today-highlight="true" z>
+                            <input type="text">
+                            <div class="input-group-addon">
+                                <span class="fal fa-calendar-alt"></span>
+                            </div>
+                        </div>
+
+                        <div class="input-field col s2">
+                            <select>
+                                <option value="1">None</option>
+                                <option value="2">1 year</option>
+                                <option value="3">3 year</option>
+                                <option value="4">Others</option>
+                            </select>
+                            <label>Token Lockup Period</label>
+                        </div>
+                        <div class="input-group date input-field col s4" data-provide="datepicker" data-date-today-highlight="true" z>
+                            <input type="text">
+                            <div class="input-group-addon">
+                                <span class="fal fa-calendar-alt"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row row-large">
+                        <div class="col s12 center-align">
+                            <p><a href="#" class="btn btn-white btn-large">back</a> <a href="#" class="btn btn-large">Next</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+</div>
+<style>
+
+    .date-range {
+        position: relative;
+    }
+
+    .date-range .bar {
+        position: absolute;
+        top: 20px;
+        left: 25%;
+        margin-left: -2px;
+    }
+</style>
+</body>
+</html>
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html', {
+"folder" : "guide"
+})
+<body>
+<div id="wrap">
+    <div id="container" class="container">
+        <div class="page_guide">
+            <div id="contents" class="contents">
+                <h1 class="title">component : Box</h1>
+                <h2 class="title_sub">box-list - Issuance list & Investor list에서 사용</h2>
+                <div class="area area_guide">
+                    <p class="desc">마우스 오버시 툴팁이 show 될 곳을 .tooltip로 감싼다.</p>
+                    <p class="desc">.tooltip-box 하위에 태그를 추가하고 필요한 텍스트를 추가한다.</p>
+                    <div class="component">
+                        <div class="row">
+                            <a href="#" class="tooltip"><i class="fal fa-info-circle"></i><span class="tooltip-box">The project key is used as the name of the token.<br>Choose something that is easy to understand and easy to type.<br>(Maximum 3 letters)</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/**
+탭
+ */
+.tabs {
+    position: relative;
+
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+    & .list {
+        border-bottom: 1px solid #6A75CA;
+        &::after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+
+        & li {
+            float: left;
+            height: 50px;
+            line-height: 48px;
+            text-align: center;
+            background: #ffffff;
+            -webkit-border-radius: 10px 10px 0 0;
+            -moz-border-radius: 10px 10px 0 0;
+            border-radius: 10px 10px 0 0;
+            -webkit-transition: 1s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            -o-transition: .2s;
+            transition: .2s;
+            margin-left: -1px;
+            & a {
+                display: block;
+                height: 100%;
+                line-height: 48px;
+                text-align: center;
+                -webkit-border-radius: 10px 10px 0 0;
+                -moz-border-radius: 10px 10px 0 0;
+                border-radius: 10px 10px 0 0;
+                border: 1px solid #C5C5C5;
+                border-bottom: none;
+                font-size: 20px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    width: 1px;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+
+                & span {
+                    vertical-align: middle;
+                    line-height: 12px;
+                }
+
+            }
+
+            &.focus, &:hover {
+                background-color: var(--color-point);
+                & a {
+                    color: #ffffff;
+                }
+            }
+
+            &:active {
+                background: #3229af;
+                color: #ffffff;
+            }
+            &.active {
+                background-color: #6A75CA;
+                color: #ffffff;
+                position: relative;
+                z-index: 10 ;
+                & a {
+                    color: #ffffff;
+                    border: 1px solid #6A75CA;
+                }
+
+            }
+        }
+        &.col2 {
+            & li {
+                width: 50%;
+                width: calc(50% + 1px);
+            }
+        }
+    }
+
+    & .panel{
+        margin-bottom:20px;
+    }
+
+
+}

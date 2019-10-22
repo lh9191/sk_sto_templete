@@ -1,0 +1,48 @@
+/**
+slider
+ */
+.swiper-container {
+    position: relative;
+
+}
+.swiper-pagination {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    line-height: 0;
+
+    & span {
+        width: 4px;
+        height: 4px;
+        background-color: #cdcdcd;
+        margin: 0 3px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        font-size: 0;
+        color: transparent;
+        display: inline-block;
+        line-height: 0;
+        opacity: 1;
+
+        &.swiper-pagination-bullet-active {
+            width: 30px;
+            background-color: #3690df;
+        }
+    }
+}
+.swiper-button-prev {
+    position: absolute;
+    top: 114px;
+    left: 5px;
+    z-index: 100;
+}
+.swiper-button-next {
+    position: absolute;
+    top: 114px;
+    right: 5px;
+    z-index: 100;
+}
+.swiper-button-disabled {
+    opacity: 0;
+}

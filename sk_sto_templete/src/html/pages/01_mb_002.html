@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap">
+    @@include('../include/header.html')
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_login">
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col s12">
+                        <span class="card-title">Create your <span>'POTENS'</span> account</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id="email" value="">
+                            <label for="email">Email adress</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select data-tooltip="I'd like to make personal investments.">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Individual Investor</option>
+                                <option value="2">Institutional Investors</option>
+                                <option value="3">Asset Issuer</option>
+                            </select>
+                            <label>User Type</label>
+                        </div>
+    
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="password" id="Password" value="" data-tooltip="Use 8 or more characters with a mix of letters,
+numbers & symbols">
+                            <label for="Password">Password</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row row-mb-lg-2">
+                        <div class="input-field col s12">
+                            <input type="password" id="Confirm" value="">
+                            <label for="Confirm">Confirm Password</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <a href="#" class="btn btn-block btn-large">Create account</a>
+                    </div>
+                    <div class="row">
+                        <p class="center-align">Already have an account? <a href="#" class="btn-text">Sign in</a></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+    @@include('../include/footer.html')
+</div>
+<style>
+    .page_login {
+    }
+    .page_login .title {
+        font-size: 32px;
+        line-height: 48px;
+                font-family: var(--font);
+        font-weight: 700;
+        color: #6A75CA;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .page_login .card {
+        position: relative;
+        width: 440px;
+        margin: 0 auto;
+    }
+    .page_login .card .card-content {
+        padding: 42px 40px 22px;
+    }
+    .page_login .card .card-title span {
+        font-family: "var(--font)";
+    }
+    .page_login .card .forgot {
+        text-align: center;
+        margin: 25px;
+    }
+
+    .page_login .card .forgot a {
+        color: #2E3CA8;
+        font-size: 16px;
+        font-family: "NotoSansKR-Regular-Hestia";
+    }
+    .page_login .card .description {
+        margin-bottom: 8px;
+        font-size: 13px;
+    }
+</style>
+</body>
+</html>
+
+

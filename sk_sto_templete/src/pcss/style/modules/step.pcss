@@ -1,0 +1,106 @@
+/**
+탭
+ */
+.step {
+    position: relative;
+    height: 80px;
+    width: 600px;
+    margin: 20px auto ;
+    & .step-item {
+        position: absolute;
+        top: 0;
+        width: 100px;
+        text-align: center;
+        font-size: 18px;
+        color: #333333;
+        &.step-first {
+            left: 0;
+        }
+        &.step-last {
+            right: 0;
+        }
+        &.step-3-2 {
+            left: 50%;
+            margin-left: -50px;
+        }
+        &.step-4-2 {
+            left: 36%;
+            margin-left: -50px;
+        }
+        &.step-4-3 {
+            left: 64%;
+            margin-left: -50px;
+        }
+        & .circle {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border: 3px solid var(--color-point);
+            margin: 0 auto 5px;
+            background-color: #fff;
+            position: relative;
+            z-index: 10;
+            box-shadow: #ffffff 0px 0px 0px 5px;
+            &.off {
+                border-color: #D2D2D2;
+            }
+            &.check {
+                background-color: var(--color-point);
+                font-family: 'Font Awesome 5 Pro';
+                font-weight: 300;
+                &::after {
+                    content: "\f00c";
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -11px;
+                    margin-left: -8px;
+                    color: #ffffff;
+                }
+            }
+        }
+        & .btn{
+            &.btn-white{
+            margin-top: 8px;
+            width: 80px !important;
+            min-width: 80px !important;
+            }
+        }
+
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 13px;
+        left: 70px;
+        width: calc(100% - 140px);
+        border-bottom: 4px dotted #96A1B4;
+        z-index: 1;
+    }
+    &.step-medium {
+        height: 100px;
+         & .circle {
+             width: 50px;
+             height: 50px;
+         }
+         &::after {
+             top: 23px;
+         }
+        &.step-medium-btn{
+            height: 136px;
+        }
+     }
+    &.step-large {
+        height: 150px;
+         & .circle {
+             width: 70px;
+             height: 70px;
+         }
+         &::after {
+             top: 23px;
+         }
+     }
+
+}

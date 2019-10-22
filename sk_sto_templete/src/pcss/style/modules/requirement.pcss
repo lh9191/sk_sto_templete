@@ -1,0 +1,36 @@
+.requirement {
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+    padding-left: 30px;
+    display: block;
+    height: 40px;
+    padding-top: 9px;
+    & i {
+        width: 24px;
+        height: 24px;
+        background-color: #99ABC9;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 3px;
+        margin-right: 8px;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        &.sprite.sprite_rejected{
+            back: none;
+        }
+    }
+    &.error i {
+        background-color: #CC1E03;
+    }
+    &.line2 {
+        padding-top: 3px;
+    }
+}

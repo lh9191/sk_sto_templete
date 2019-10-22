@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap">
+    @@include('../include/header.html')
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_password">
+            <div class="row">
+                <div class="col s12">
+                    <p class="title">
+                        <span class="bold f-point">Your sign-up period has expired</span>
+                    </p>
+                    <div class="desc">
+                        The system is valid for 7 days after the sign-up request mail.<br>
+                        Please ask the administrator again if necessary.<br>
+                        Contact us at (<a href="mailTo:potens@sk.com">potens@sk.com</a>).
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+    @@include('../include/footer.html')
+</div>
+<style>
+    /*2019-10-16 : style 변경*/
+    .contents{
+        padding: 220px 0 256px;
+    }
+    .page_password .illust {
+        width: 400px;
+        height: 205px;
+        margin: 0 auto 20px auto;
+        background-color: #dddddd;
+    }
+    .page_password .title {
+        font-size: 32px;
+        line-height: 48px;
+        color: #333333;
+        text-align: center;
+        margin-bottom: 19px;
+    }
+    .page_password .desc {
+        font-size: 20px;
+        line-height: 36px;
+        color: #333333;
+        text-align: center;
+    }
+
+    .page_password .title span {
+                font-family: var(--font);
+        font-weight: 700;
+        color: #2e3ca8;
+    }
+
+
+</style>
+</body>
+</html>
+
+

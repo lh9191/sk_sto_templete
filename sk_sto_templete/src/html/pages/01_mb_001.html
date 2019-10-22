@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap">
+    @@include('../include/header.html')
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_login">
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col s12">
+                            <span class="card-title">Welcome <span>POTENS</span> Platform!</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input type="text" id="email" value="">
+                            <label for="email">Email adress</label>
+                        </div>
+                    </div>
+                    <div class="row row-mb-md">
+                        <div class="input-field col s12">
+                            <input type="password" id="Password" value="">
+                            <label for="Password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <a href="#" class="btn btn-block btn-large">Sign in</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="forgot"><a href="#">Forgot your password?</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+    @@include('../include/footer.html')
+</div>
+
+<style>
+    .page_login {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .page_login .title {
+        padding-top: 100px;
+        font-size: 32px;
+        line-height: 48px;
+                font-family: var(--font);
+        font-weight: 700;
+        color: #6A75CA;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .page_login .card {
+        position: relative;
+        width: 440px;
+        margin: 0 auto 100px;
+    }
+
+    .page_login .card .card-content {
+        padding: 42px 40px 22px;
+    }
+
+
+    .page_login .card .card-title span {
+        font-family: "var(--font)";
+    }
+
+    .page_login .card .forgot {
+        text-align: center;
+        margin: 25px;
+    }
+
+    .page_login .card .forgot a {
+        color: #2E3CA8;
+        font-size: 16px;
+        font-family: "NotoSansKR-Regular-Hestia";
+    }
+</style>
+</body>
+</html>
+
+

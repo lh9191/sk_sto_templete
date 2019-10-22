@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap">
+    @@include('../include/header.html')
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_login">
+            <div class="card">
+                <div class="card-content">
+                    <!--2019-10-16 : row-mb-lg-3 클레스 추가-->
+                    <div class="row row-mb-lg-3">
+                        <div class="col s6">
+                            <div class="box box-list box-list-sm box-list-no-pd">
+                                <div class="img">
+                                    <a href="#"><img src="../../img/@temp/asset1.png" alt="자산이미지"></a>
+                                </div>
+                                <div class="state-list">
+                                    <i class="i_state  i_state_rt">Saved</i>
+                                </div>
+                                <div class="title">
+                                    <b>KIM’s Park</b>(STO)
+                                </div>
+                                <div class="sub"><span>IP Right</span><span>Company</span></div>
+                                <div class="trash"><a href="#" class="btn btn-white btn-white-icon"><i class="fal fa-trash-alt"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div class="box box-list box-list-sm box-list-no-pd">
+                                <div class="img">
+                                    <a href="#"><img src="../../img/@temp/asset2.png" alt="자산이미지"></a>
+                                </div>
+                                <div class="state-list">
+                                    <i class="i_state i_state_comingsoon  i_state_rt">Coming soon</i>
+                                </div>
+                                <div class="title">
+                                    <b>KIM’s Park</b>(STO)
+                                </div>
+                                <div class="sub"><span>IP Right</span><span>Company</span></div>
+                                <div class="trash"><a href="#" class="btn btn-white btn-white-icon"><i class="fal fa-trash-alt"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--2019-10-16 : row-mb-lg-3 클레스 추가-->
+                    <div class="row row-mb-lg-3 ">
+                        <div class="col s6">
+                            <div class="box box-list box-list-sm box-list-no-pd">
+                                <div class="img">
+                                    <a href="#"><img src="../../img/@temp/asset2.png" alt="자산이미지"></a>
+                                </div>
+                                <div class="state-list">
+                                    <i class="i_state i_state_live  i_state_rt">Live</i>
+                                </div>
+                                <div class="title title-line-2">
+                                    <b>Cloth Holder Straight<br>Black</b>
+                                </div>
+                                <div class="sub"><span>IP Right</span><span>Company</span></div>
+                                <div class="trash"><a href="#" class="btn btn-white btn-white-icon"><i class="fal fa-trash-alt"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--2019-10-16 : row-mb-no 클레스 추가-->
+                    <div class="row row-mb-no">
+                        <div class="col s12 center-align area-btn">
+                            <a href="#" class="btn btn-large"><i class="fal fa-plus i_left"></i>Add a Project</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+    @@include('../include/footer.html')
+</div>
+<style>
+    /*2019-10-16 : style 추가*/
+    .row .col.s6{
+        padding: 0 30px;
+    }
+    .card .card-content{
+        padding: 60px 40px;
+    }
+    .area-btn {
+        padding-top: 0px !important;
+    }
+</style>
+</body>
+</html>
+
+

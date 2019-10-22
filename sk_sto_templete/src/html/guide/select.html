@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html', {
+"folder" : "guide"
+})
+<body>
+<div id="wrap">
+    <div id="container" class="container">
+        <div class="page_guide">
+            <div id="contents" class="contents">
+                <h1 class="title">component : Form</h1>
+                <h2 class="title_sub">select </h2>
+                <div class="area area_guide">
+                    <p class="desc">select</p>
+                    <div class="component">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <select>
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Select label</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+</script>
+</body>
+</html>

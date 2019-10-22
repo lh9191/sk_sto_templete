@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html', {
+"folder" : "guide"
+})
+<body>
+<div id="wrap">
+    <div id="container" class="container">
+        <div class="page_guide">
+            <div id="contents" class="contents">
+                <h1 class="title">component : input text</h1>
+                <h2 class="title_sub">텍스트 입력창</h2>
+                <div class="area area_guide">
+                    <h3 class="title_component">텍스트상태</h3>
+                    <p class="desc">input 텍스트는 모두 사용 가능 하다</p>
+                    <p class="desc">에러 메세지는 "helper-text"라는 클래스명으로 추가 하여 사용 한다.</p>
+                    <p class="desc">에러 상황은 input에 "invalid" 클래스를 삽입 시 "helper-text"의 data-error이 화면에 표시가 된다.</p>
+                    <p class="desc">달력은 bootstrap-datepicker3를 사용한다.</p>
+                    <p class="desc">파일 첨부 시 서버에서 성공 메세지가 올 경우 "check"에 "active" 클래스를 삽입하면 인터렉션이 이루어진다. </p>
+                    <p class="desc">textarea에서는 초기값은 작은 높이에서 점점 늘어나도록 구성을 한다</p>
+                    <div class="component">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" id="normal" value="">
+                                <label for="normal">normal</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="password" id="Password" value="">
+                                <label for="Password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="email" id="invalid" class="validate">
+                                <label for="invalid">invalid</label>
+                                <span class="helper-text" data-error="wrong"></span>
+                            </div>
+                            <div class="input-field col s6 ">
+                                <i class="unit-text">LIM</i>
+                                <input type="text" id="unit" value="" class="right-align unit">
+                                <label for="unit">Number</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input type="text" id="readonly" value="readonly style" readonly>
+                                <label for="readonly" class="active">readonly</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input type="text" id="disabled" class="validate" disabled>
+                                <label for="disabled" class="active">disabled</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-group date input-field col s6" data-provide="datepicker" data-date-today-highlight="true"z>
+                                <input type="text">
+                                <div class="input-group-addon">
+                                    <span class="fal fa-calendar-alt"></span>
+                                </div>
+                            </div>
+                            <div class="file-field input-field col s6">
+                                <div class="btn">
+                                    <span>File</span>
+                                    <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path" type="text">
+                                </div>
+                                <div class="check active">
+                                    <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px"
+                                         height="15px" viewBox="0 0 27.708 21.553"
+                                         enable-background="new 0 0 27.708 21.553" xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <textarea id="textarea2" class="materialize-textarea" data-length="120"
+                                          style="height: 44px;"></textarea>
+                                <label for="textarea2">Textarea</label>
+                                <span class="character-counter" style="float: right; font-size: 12px;"></span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

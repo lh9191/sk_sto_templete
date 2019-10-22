@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap page_waiting">
+    @@include('../include/header.html')
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_step">
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="step">
+                            <div class="step-item step-first">
+                                <i class="circle on"></i>
+                                <span>Profile</span>
+                            </div>
+                            <div class="step-item step-3-2">
+                                <i class="circle off"></i>
+                                <span>Verification</span>
+                            </div>
+                            <div class="step-item step-last">
+                                <i class="circle off"></i>
+                                <span>Fnish</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-form-title">Basic Infomation</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+
+                            </select>
+                            <label>Nationality</label>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="First" value="">
+                            <label for="First">First Name</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="Last" value="">
+                            <label for="Last">Last Name</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group date input-field col s6" data-provide="datepicker"
+                             data-date-today-highlight="true" z>
+                            <input type="text" id="birth" value="">
+                            <label for="birth">Date of birth</label>
+                            <div class="input-group-addon">
+                                <span class="fal fa-calendar-alt"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Residential address-->
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-form-title">Residential address</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+                                <option value="1">Afghanistan</option>
+                                <option value="2">Albania</option>
+                                <option value="3">Algeria</option>
+
+                            </select>
+                            <label>Country</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="address1" value="">
+                            <label for="address1">Street address 1</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="address2" value="">
+                            <label for="address2">Street address 2(optional)</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="City" value="">
+                            <label for="City">City</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="State" value="">
+                            <label for="State">State / Province / Region</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="zipcode" value="">
+                            <label for="zipcode">Zip Code</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- Residential address-->
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-form-title">Bank infomation</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="bankname" value="">
+                            <label for="bankname">Bank name</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="accountname" value="">
+                            <label for="accountname">Account name</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="accountnumber" value="">
+                            <label for="accountnumber">Account Number</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row row-large">
+                        <p class="col s12 center-align">By continuing, you agree to STO Platform <a href="#">Conditions of Use</a> and <a href="#">Privacy
+                            Notice</a>.</p>
+                    </div>
+                    <div class="row row-large">
+                        <div class="col s12 center-align">
+                            <p><a href="#" class="btn btn-large">Next</a></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+    @@include('../include/footer.html')
+</div>
+</body>
+</html>
+
+

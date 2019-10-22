@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html', {
+"folder" : "guide"
+})
+<body>
+<div id="wrap">
+    <div id="container" class="container">
+        <div class="page_guide">
+            <div id="contents" class="contents">
+                <h1 class="title">component : Form</h1>
+                <h2 class="title_sub">button </h2>
+                <div class="area area_guide">
+                    <p class="desc">button</p>
+                    <div class="component">
+                        <div class="row">
+                            <a class="btn">button</a>
+                            <a class="btn disabled">button disabled</a>
+                        </div>
+                        <div class="row">
+                            <a class="btn btn-block">button block</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+</script>
+</body>
+</html>

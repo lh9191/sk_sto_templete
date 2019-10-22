@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html', {
+"folder" : "guide"
+})
+<body>
+<div id="wrap">
+    <div id="container" class="container">
+        <div class="page_guide">
+            <div id="contents" class="contents">
+                <h1 class="title">component : Box</h1>
+                <!--box-list - Issuance-->
+                <h2 class="title_sub">box-list - Issuance list에서 사용</h2>
+                <div class="area area_guide">
+                    <p class="desc">.box</p>
+                    <p class="desc">.box 크기는 상위의 .col 과 함께 쓰이는 s1~12 숫자로 조절한다.</p>
+                    <p class="desc">.box + .box-lined + .box-radius-lg + .box-pd + .box-list 클레스 조합하여 사용</p>
+                    <p class="desc">하위에 .i_state  & .progress-bar-bg 모듈 포함한다.</p>
+                    <p class="desc">하위에 .i_state는 .i_state(초록색)이 default 이며 .i_state_live 추가시 핑크색으로 표시된다.</p>
+                    <div class="component">
+                        <div class="row">
+                            <div class="col s6">
+                            <div class="box box-list box-lined box-radius-lg box-pd">
+                                <div class="img">
+                                    <a href="#"><img src="../../img/@temp/asset1.png" alt="자산이미지"></a>
+                                    <i class="i_state  i_state_rt">Saved</i>
+                                </div>
+                                <div class="title">
+                                    <b>KIM’s Park</b>(STO)
+                                </div>
+                                <div class="sub"><span>IP Right</span><span>Company</span><a href="#" class="btn btn-white btn-white-icon"><i class="fal fa-trash-alt"></i></a></div>
+                                <div class="progress-bar-bg tooltip">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                    <span class="tooltip-box">45Day left</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col s6">
+                            <div class="box box-list box-lined box-radius-lg box-pd">
+                                <div class="img">
+                                    <a href="#"><img src="../../img/@temp/asset2.png" alt="자산이미지"></a>
+                                    <i class="i_state  i_state_live i_state_rt">Live</i>
+                                </div>
+                                <div class="title">
+                                    <b>KIM’s Park</b>(STO)
+                                </div>
+                                <div class="sub"><span>IP Right</span><span>Company</span><a href="#" class="btn btn-white btn-white-icon"><i class="fal fa-trash-alt"></i></a></div>
+                                <div class="progress-bar-bg tooltip">
+                                    <div class="progress-bar" style="width: 50%;"></div>
+                                    <span class="tooltip-box">45Day left</span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--box-list - Investor-->
+                <h2 class="title_sub">box-list - Investor list에서 사용</h2>
+                <div class="area area_guide">
+                    <p class="desc">.box</p>
+                    <p class="desc">.box 크기는 상위의 .col 과 함께 쓰이는 s1~12 숫자로 조절한다.</p>
+                    <p class="desc">.box + .box-lined + .box-radius-lg + .box-pd + .box-list 클레스 조합하여 사용</p>
+                    <p class="desc">하위에 .i_state  & .progress-bar-bg 모듈 포함한다.</p>
+                    <p class="desc">하위에 .i_state는 .i_state(초록색)이 default 이며 .i_state_live 추가시 핑크색으로 표시된다.</p>
+                    <div class="component">
+                        <div class="row">
+                            <div class="col s6">
+                                <div class="box box-list box-lined box-radius-lg box-pd">
+                                    <div class="img">
+                                        <a href="#"><img src="../../img/@temp/asset1.png" alt="자산이미지"></a>
+                                        <i class="i_state i_state_live i_state_rt">Coming soon</i>
+                                    </div>
+                                    <div class="title">
+                                        <b>KIM’s Park</b>(STO)
+                                    </div>
+                                    <div class="sub"><span>IP Right</span><span>Company</span></div>
+                                    <div class="sub clearfix">
+                                        <div class="due">10/10/2020</div>
+                                    </div>
+
+                                    <div class="progress-bar-bg"><div class="progress-bar" style="width: 0%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="col s6">
+                                <div class="box box-list box-lined box-radius-lg box-pd">
+                                    <div class="img">
+                                        <a href="#"><img src="../../img/@temp/asset2.png" alt="자산이미지"></a>
+                                        <i class="i_state  i_state_live i_state_rt">Live</i>
+                                    </div>
+                                    <div class="title">
+                                        <b>KIM’s Park</b>(STO)
+                                    </div>
+                                    <div class="sub"><span>IP Right</span><span>Company</span><a href="#" class="btn btn-white btn-white-icon"><i class="fal fa-trash-alt"></i></a></div>
+                                    <div class="sub clearfix">
+                                        <div class="stake"><span><b>27,000</b> LIM</span><span><b>20</b>%</span></div>
+                                        <div class="due">45Day left</div>
+                                    </div>
+                                    <div class="progress-bar-bg"><div class="progress-bar" style="width: 50%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+</script>
+</body>
+</html>

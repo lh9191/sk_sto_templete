@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap wrap_white">
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_step">
+            <div class="flow">
+                <div class="title">Identity Verification</div>
+                <a href="#" class="page_back"></a>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="step">
+                            <div class="step-item step-first">
+                                <i class="circle check"></i>
+                                <span>Profile</span>
+                            </div>
+                            <div class="step-item step-3-2">
+                                <i class="circle on"></i>
+                                <span>Verification</span>
+                            </div>
+                            <div class="step-item step-last">
+                                <i class="circle off"></i>
+                                <span>Fnish</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row verification">
+                        <div class="col s4">
+                            <div class="box">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <!--2019-09-25 : verify your identify = > legal id 문구변경-->
+                                        <span class="box-title">Legal ID</span>
+                                    <!--<a href="#" class="btn-back"><i class="fal fa-arrow-circle-left"></i></a>-->
+                                    </div>
+                                </div>
+                                <div class="verify_list" style="display: none;">
+                                    <p>Select the type of your legal ID to upload</p>
+                                    <div class="method">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="img"><img src="../../img/common/ico-passport.png"></span>
+                                                    <span class="tit">Passport</span>
+                                                    <span class="desc">Face photo page</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="img"><img src="../../img/common/ico-driver.png"></span>
+                                                    <span class="tit">Driver's Licence</span>
+                                                    <span class="desc">Front photo page</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="img"><img src="../../img/common/ico-id.png"></span>
+                                                    <span class="tit">Identy Card</span>
+                                                    <span class="desc">Front photo page</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="detail" style="">
+                                    <div class="illust">
+                                        <img src="../../img/common/img-passport.png">
+                                        <img src="../../img/common/img-driver.png" style="display: none;">
+                                        <img src="../../img/common/img-identity.png" style="display: none;">
+                                    </div>
+                                    <div class="list">
+                                        <span class="requirement line2"><i class="fal fa-check"></i>ID clearly visible - not reflective, grainy, or blurry</span>
+                                        <span class="requirement"><i class="fal fa-check"></i>Valid ID - not expired</span>
+                                    </div>
+                                    <div class="file-field input-field">
+                                        <div class="btn">
+                                            <span>File</span>
+                                            <input type="file">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path" type="text">
+                                        </div>
+                                        <!-- 성공 시 addClass="active" -->
+                                        <div class="check">
+                                            <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px"
+                                                 height="15px" viewBox="0 0 27.708 21.553"
+                                                 enable-background="new 0 0 27.708 21.553" xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "/>
+                                    </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="box">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <span class="box-title">Selfie</span>
+                                    </div>
+                                </div>
+                                <div class="illust">
+                                    <img src="../../img/common/img-selfie.png">
+                                </div>
+
+                                <div class="list">
+                                    <!--2019-09-25 : 문구수정-->
+                                    <span class="requirement"><i class="fal fa-check"></i>Face clearly visible</span>
+                                    <span class="requirement line2"><i class="fal fa-check"></i>Reasonable likeness - not too different from your legal ID</span>
+                                    <span class="requirement "><i class="fal fa-check"></i>Your legal ID presented</span>
+                                    <span class="requirement line2"><i class="fal fa-check"></i>Hand-written name of service (e.g. Potens) and today's date</span>
+                                </div>
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <span>File</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path" type="text">
+                                    </div>
+                                    <!-- 성공 시 addClass="active" -->
+                                    <div class="check">
+                                        <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px"
+                                             height="15px" viewBox="0 0 27.708 21.553"
+                                             enable-background="new 0 0 27.708 21.553" xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "/>
+                                    </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="box">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <span class="box-title">Address</span>
+                                    </div>
+                                </div>
+                                <div class="illust">
+                                    <img src="../../img/common/img-address.png">
+                                </div>
+                                <div class="list">
+                                    <!--2019-09-25 : 문구수정-->
+                                    <span class="requirement line2"><i class="fal fa-check"></i>Name, address, issue date, and issuer clearly visible</span>
+                                    <span class="requirement"><i class="fal fa-check"></i>Same name as your legal ID</span>
+                                    <span class="requirement"><i class="fal fa-check"></i>Document not older than 3 months</span>
+                                    <span class="requirement line2"><i class="fal fa-check"></i>No screenshots, mobile bills, or purchase receipts</span>
+                                </div>
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <span>File</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path" type="text">
+                                    </div>
+                                    <!-- 성공 시 addClass="active" -->
+                                    <div class="check">
+                                        <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px"
+                                             height="15px" viewBox="0 0 27.708 21.553"
+                                             enable-background="new 0 0 27.708 21.553" xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "/>
+                                    </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-large">
+                        <div class="col s12 center-align">
+                            <p><a href="#" class="btn btn-white btn-large">Back</a> <a href="#" class="btn btn-large">Submit</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+</div>
+<style>
+
+    .verification .box {
+        padding: 25px 20px 25px;
+        border: 1px solid #AEAEAE;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        height: 600px;
+    }
+
+    .verification .box .box-title {
+        color: #2E3CA8;
+        font-size: 20px;
+        margin-bottom: 0;
+        font-family: var(--font);
+        font-weight: 600;
+    }
+    .verification .box .btn-back {
+        position: absolute;
+        top: 27px;
+        right: 20px;
+        width: 21px;
+        height: 21px;
+        color: #666666;
+        font-size: 20px;
+    }
+
+    .verification .box .illust {
+        width: 100%;
+        height: 205px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .verification .box .illust img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .verification .box .illust::after{
+        content: '';
+        width: 1px;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+    /* 0926 수정 사항 적용*/
+    .verification .box .list {
+        margin-bottom: 20px;
+        height: 160px;
+    }
+
+    .verification .box .verify_list {
+        position: relative;
+    }
+    .verification .box .verify_list p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    .verification .box .verify_list .method {
+        position: relative;
+    }
+    .verification .box .verify_list .method li {
+        position: relative;
+        height: 120px;
+        margin-bottom: 20px;
+        border: 1px solid #c9c9c9;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        padding: 10px ;
+    }
+
+    .verification .box .verify_list .method li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 30px 0 0 110px;
+    }
+    .verification .box .verify_list .method li a .img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+    .verification .box .verify_list .method li a .img img {
+        vertical-align: middle;
+    }
+    .verification .box .verify_list .method li a .img:after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .verification .box .verify_list .method li a .tit {
+        display: block;
+        font-size: 16px;
+        color: #333333;
+    }
+    .verification .box .verify_list .method li a .desc {
+        display: block;
+        font-size: 14px;
+        color: #666666;
+    }
+</style>
+</body>
+</html>
+
+

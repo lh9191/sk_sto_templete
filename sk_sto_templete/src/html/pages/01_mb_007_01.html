@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div class="dim-fixed"></div>
+<div class="popup_wrap" style="display: block;">
+	<div class="popup">
+		<div class="popup_header">Add Representatives<a href="#" class="btn-close"><i class="fal fa-times"></i><span class="visually_hidden">닫기</span></a></div>
+		<div class="popup_body popup_body_pd clearfix" style="height: 600px;overflow: auto">
+			<div class="add-user">
+				<!--2019-09-26 : select 줄 바꿈-->
+				<div class="row">
+					<div class="input-field col s6">
+						<select>
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+
+						</select>
+						<label>Nationality</label>
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="input-field col s6">
+						<input type="text" id="First" value="">
+						<label for="First">First Name</label>
+						<span class="helper-text" data-error="error massage"></span>
+					</div>
+					<div class="input-field col s6">
+						<input type="text" id="Last" value="">
+						<label for="Last">Last Name</label>
+						<span class="helper-text" data-error="error massage"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<select>
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">Director</option>
+							<option value="2">Shareholder</option>
+							<option value="3">Ultimate Beneficial Owner</option>
+						</select>
+						<label>Job Position</label>
+					</div>
+					<div class="input-field col s6 ">
+						<input type="text" id="total" value="" class="unit">
+						<label for="total">ID Number
+							<a href="#" class="_tooltip tooltip"><i class="fal fa-info-circle"></i><span class="tooltip-box">Please type your ID number that can be found on your submitted Photo ID in the next step.</span></a></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<input type="text" id="Phone" value="">
+						<label for="Phone">Phone Number
+							<a href="#" class="tooltip"><i class="fal fa-info-circle"></i><span class="tooltip-box">Numbers only. No spaces or dashes.</span></a>
+						</label>
+						<span class="helper-text" data-error="error massage"></span>
+					</div>
+					<div class="input-field col s6">
+						<input type="text" id="Email" value="">
+						<label for="Email">Email</label>
+						<span class="helper-text" data-error="error massage"></span>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="input-field col s6">
+						<input type="text" id="address3" value="">
+						<label for="address3">Street address 1</label>
+						<span class="helper-text" data-error="error massage"></span>
+					</div>
+					<div class="input-field col s6">
+						<input type="text" id="address4" value="">
+						<label for="address4">Street address 2(optional)</label>
+						<span class="helper-text" data-error="error massage"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<input type="text" id="City2" value="">
+						<label for="City2">City</label>
+						<span class="helper-text" data-error="error massage"></span>
+					</div>
+					<div class="input-field col s6">
+						<input type="text" id="State2" value="">
+						<label for="State2">State / Province / Region</label>
+						<span class="helper-text" data-error="error massage"></span>
+					</div>
+				
+				</div>
+				<div class="row">
+					<div class="input-field col s6">
+						<input type="text" id="Zip" value="">
+						<label for="Zip">Zip Code</label>
+						<span class="helper-text" data-error="error massage"></span>
+					</div>
+					<div class="input-field col s6">
+						<select>
+							<option value="" disabled selected>Choose your option</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+							<option value="1">Afghanistan</option>
+							<option value="2">Albania</option>
+							<option value="3">Algeria</option>
+
+						</select>
+						<label>Country</label>
+					</div>
+				</div>
+
+
+				<!--2019-09-25 :  zip code 폼 삭제-->
+				<!-- PB-016	Legal ID 명칭 변경-->
+				<div class="row">
+					<div class="col s6">
+						<p class="bu-dot">Legal ID</p>
+					</div>
+					<div class="input-field col s3">
+						<select>
+							<option value="" disabled selected>Choose option</option>
+							<option value="1">Driver License</option>
+							<option value="2">Passport</option>
+							<option value="3">identity Card</option>
+						</select>
+					</div>
+					<div class="file-field input-field col s3">
+						<div class="btn">
+							<span>File</span>
+							<input type="file">
+						</div>
+						<div class="file-path-wrapper">
+							<input class="file-path" type="text">
+						</div>
+						<div class="check">
+							<svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px" height="15px" viewBox="0 0 27.708 21.553" enable-background="new 0 0 27.708 21.553" xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10" points="1.748,11.527 8.342,18.121 25.96,1.977 "></polyline>
+                                    </svg>
+						</div>
+					</div>
+				</div>
+				<!--2019-09-25 : Selfie, Address 항목 및 첨부 파일 기능 삭제-->
+				<div class="row">
+					<div class="col s12 center-align">
+						<p>
+							<a href="#" class="btn btn-white" style="min-width: 140px;">Cancel</a> <a href="#" class="btn" style="min-width: 140px; margin-left: 10px;">Save</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+

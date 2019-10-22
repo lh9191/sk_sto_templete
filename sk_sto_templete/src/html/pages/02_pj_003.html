@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap wrap_white">
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents ">
+            <div class="flow">
+                <div class="title">Start a project</div>
+                <a href="#" class="page_back"></a>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="step col s8 offset-s2">
+                            <div class="step-item step-first">
+                                <i class="circle on"></i>
+                                <span>Asset<br>Detail</span>
+                            </div>
+                            <div class="step-item step-4-2">
+                                <i class="circle off"></i>
+                                <span>Sale Configuration</span>
+                            </div>
+                            <div class="step-item step-4-3">
+                                <i class="circle off"></i>
+                                <span>Investor Invitation<br><span class="f-light-gray">(optional)</span></span>
+                            </div>
+                            <div class="step-item step-last">
+                                <i class="circle off"></i>
+                                <span>Final Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-form-title">Asset Information</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="text" id="Project" value="">
+                                    <label for="Project">Asset Name *</label>
+                                    <span class="helper-text" data-error="error massage"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <select>
+                                        <option value="1">option1</option>
+                                        <option value="2">option2</option>
+                                        <option value="3">option3</option>
+                                    </select>
+                                    <label>Category *</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s10">
+                                    <input type="text" id="Total" value="" class="right-align">
+                                    <label for="Total">Total value *</label>
+                                    <span class="helper-text" data-error="error massage"></span>
+                                </div>
+                                <div class="input-field col s2">
+                                    <select>
+                                        <option value="1" selected="selected">SGD</option>
+                                        <option value="2">USD</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-bottom: 0;">
+                                <div class="col s4">
+                                    <p class="bu-dot">Termination Date</p>
+                                </div>
+                                <div class="col s8">
+                                    <!-- PB-022 s4 -> s3로 변경-->
+                                    <div class="col s3" style="padding: 0;">
+                                        <!--  todo : 높이 변경-->
+                                        <label class="wrap-form" style="height: auto;">
+                                            <input class="with-gap" name="group3" type="radio" checked="">
+                                            <span>YES</span>
+                                        </label>
+                                    </div>
+                                    <!-- PB-022 s4 -> s3로 변경-->
+                                    <div class="col s3" style="padding: 0;">
+                                        <label class="wrap-form" style="height: auto;">
+                                            <input class="with-gap" name="group3" type="radio">
+                                            <span>NO</span>
+                                        </label>
+                                    </div>
+                                    <div class="col s6" style="padding-right: 0;">
+                                        <div class="input-group date input-field " data-provide="datepicker" data-date-today-highlight="true" z="">
+                                            <input type="text" id="date">
+                                            <div class="input-group-addon">
+                                                <span class="fal fa-calendar-alt"></span>
+                                            </div>
+                                            <!-- PB-022 문구 변경-->
+                                            <label for="date">Select the date</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6" style="padding-left: 90px;">
+                            <div class="file-image">
+                                <div class="title">Cover Image</div>
+                                <div class="file-field input-field">
+                                    <img src="../../img/common/login.png" alt="">
+                                    <div class="btn">
+                                        <span>Upload</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                <textarea id="textarea2" class="materialize-textarea" data-length="120" style="height: 77px;"></textarea>
+                                    <label for="textarea2">Description *</label>
+                                    <span class="character-counter" style="float: right; font-size: 12px;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot">Asset Title
+                                <a href="#" class="_tooltip tooltip"><i class="fal fa-info-circle"></i><span class="tooltip-box">A title is a document that shows legal ownership to a property or asset. A title can represent ownership of a real asset such as a car or an intangible property or assets such as a trademark.</span></a>
+                            </p>
+                        </div>
+                        <div class="file-field input-field col s6">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text">
+                            </div>
+                            <div class="check">
+                                <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px"
+                                     height="15px" viewBox="0 0 27.708 21.553"
+                                     enable-background="new 0 0 27.708 21.553" xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot">Asset Profile</p>
+                        </div>
+                        <div class="file-field input-field col s6">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text">
+                            </div>
+                            <div class="check">
+                                <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px"
+                                     height="15px" viewBox="0 0 27.708 21.553"
+                                     enable-background="new 0 0 27.708 21.553" xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot">Asset Valuation</p>
+                        </div>
+                        <div class="file-field input-field col s6">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text">
+                            </div>
+                            <div class="check">
+                                <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px"
+                                     height="15px" viewBox="0 0 27.708 21.553"
+                                     enable-background="new 0 0 27.708 21.553" xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-large">
+                        <div class="col s12 center-align">
+                            <p><a href="#" class="btn btn-large">Next</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+</div>
+<style>
+    .requirement {
+        display: inline-block;
+        padding-left: 63px;
+    }
+    .requirement i{
+        left: 32px;
+    }
+
+    .file-image {
+        position: relative;
+    }
+    .file-image .title {
+        height: 44px;
+        padding-top: 22px;
+    }
+    .file-image .file-field {
+        border: 1px solid #707070;
+        height: 285px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        padding: 10px;
+    }
+    .file-image .file-field img {
+        height: 100%;
+    }
+    .file-image .file-field input {
+        position: absolute;
+        top: -100px;
+        /*visibility: hidden;*/
+    }
+    .file-image .file-field .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -23px;
+        margin-left: -45px;
+        overflow: hidden;
+    }
+</style>
+</body>
+</html>
+
+

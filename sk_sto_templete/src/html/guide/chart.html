@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html', {
+"folder" : "guide"
+})
+<body>
+<div id="wrap">
+    <div id="container" class="container">
+        <div class="page_guide">
+            <div id="contents" class="contents">
+                <h1 class="title">component : chart</h1>
+                <!--box-list - Issuance-->
+                <h2 class="title_sub">chart</h2>
+                <div class="area area_guide">
+                    <p class="desc"><a href="https://www.highcharts.com/">https://www.highcharts.com/</a></p>
+                    <div class="component">
+                        <div class="row">
+                            <div class="col s6">
+                                <div id="pieChart1" class="pie_chart">
+                                    <script>
+                                        var colors = ['#0DB2A1', '#8BC24A', '#FF9700', '#FF5E80', '#9962FF'];
+                                        var pieChart1 = Highcharts.chart("pieChart1", {
+                                            description: "파트 별 클레임 발생 비율을 집계한 차트",
+                                            credits: false,
+                                            exporting: {
+                                                buttons: {
+                                                    contextButton: {
+                                                        enabled: false
+                                                    }
+                                                }
+                                            },
+                                            chart: {
+                                                type: 'pie',
+                                                height: 346,
+                                                spacingTop: 10,
+                                                style: {
+                                                    fontFamily: 'Nanum Square',
+                                                }
+                                            },
+                                            title: {
+                                                text: null
+                                            },
+                                            tooltip: {
+                                                pointFormat: '<b>{point.y}</b><b>%</b>'
+                                            },
+                                            legend: {
+                                                itemStyle: {
+                                                    fontSize: '1.8rem',
+                                                    fontWeight: 'normal'
+                                                },
+                                                enabled: true,
+                                                align: 'center',
+                                                width: 254,
+                                                itemWidth: 127,
+                                                itemMarginTop: 0,
+                                                itemMarginBottom: 6,
+                                                lineHeight: 2,
+                                                verticalAlign: 'bottom',
+                                                layout: 'horizontal',
+                                            },
+                                            plotOptions: {
+                                                pie: {
+                                                    center: ['50%', '50%'],
+                                                    showInLegend: true,
+                                                    color: "#ffffff",
+                                                    dataLabels: {
+                                                        enabled: true,
+                                                        format: '{point.y}%',
+                                                        distance: -20,
+                                                        style: {
+                                                            fontWeight: 'normal',
+                                                            fontSize: '1.6rem',
+                                                            textAlign : 'center',
+                                                            fontFamily: 'Nanum Square',
+                                                            textOutline: false,
+                                                            color: "#ffffff",
+                                                        },
+                                                    }
+                                                },
+                                                series: {
+                                                    size: '100%',
+                                                    innerSize: '60%',
+                                                    style: {
+                                                        fontSize: '1.2rem'
+                                                    }
+                                                }
+                                            },
+
+                                            series: [{
+                                                name: 'VOC 채널 비율',
+                                                data: [{
+                                                    name: 'MS. LIM',
+                                                    y: 64,
+                                                    color: colors[0]
+                                                }, {
+                                                    name: 'Mr. Daniel',
+                                                    y: 22,
+                                                    color: colors[1]
+                                                },{
+                                                    name: 'Mr. willy',
+                                                    y: 12,
+                                                    color: colors[2]
+                                                }, {
+                                                    name: 'Mr. Apple',
+                                                    y: 4,
+                                                    color: colors[3]
+                                                }, {
+                                                    name: 'etc',
+                                                    y: 5,
+                                                    color: colors[4]
+                                                }]
+                                            }]
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                            <div class="col s6">
+                                <div id="pieChart2" class="pie_chart">
+                                    <script>
+                                        var colors = ['#3791DF', '#DE4980', '#84CB41'];
+                                        var pieChart2 = Highcharts.chart("pieChart2", {
+                                            description: "파트 별 클레임 발생 비율을 집계한 차트",
+                                            credits: false,
+                                            exporting: {
+                                                buttons: {
+                                                    contextButton: {
+                                                        enabled: false
+                                                    }
+                                                }
+                                            },
+                                            chart: {
+                                                type: 'pie',
+                                                height: 346,
+                                                spacingTop: 10,
+                                                style: {
+                                                    fontFamily: 'Nanum Square',
+                                                }
+                                            },
+                                            title: {
+                                                text: null
+                                            },
+                                            tooltip: {
+                                                pointFormat: '<b>{point.y}</b>'
+                                            },
+                                            legend: {
+                                                itemStyle: {
+                                                    fontSize: '1.8rem',
+                                                    fontWeight: 'normal'
+                                                },
+                                                enabled: true,
+                                                align: 'center',
+                                                itemMarginTop: 0,
+                                                itemMarginBottom: 6,
+                                                lineHeight: 2,
+                                                verticalAlign: 'bottom',
+                                                layout: 'vertical',
+                                            },
+                                            plotOptions: {
+                                                pie: {
+                                                    center: ['50%', '50%'],
+                                                    showInLegend: true,
+                                                    color: "#ffffff",
+                                                    dataLabels: {
+                                                        enabled: true,
+                                                        format: '{point.y}',
+                                                        distance: -20,
+                                                        style: {
+                                                            fontWeight: 'normal',
+                                                            fontSize: '1.6rem',
+                                                            textAlign : 'center',
+                                                            fontFamily: 'Nanum Square',
+                                                            textOutline: false,
+                                                            color: "#ffffff",
+                                                        },
+                                                    }
+                                                },
+                                                series: {
+                                                    size: '100%',
+                                                    innerSize: '60%',
+                                                    style: {
+                                                        fontSize: '1.2rem'
+                                                    }
+                                                }
+                                            },
+
+                                            series: [{
+                                                name: 'VOC 채널 비율',
+                                                data: [{
+                                                    name: 'Uninvested (10)',
+                                                    y: 10,
+                                                    color: colors[0]
+                                                }, {
+                                                    name: 'In-Progress / For sale (10)',
+                                                    y: 10,
+                                                    color: colors[1]
+                                                },{
+                                                    name: 'Confirmed (6)',
+                                                    y: 6,
+                                                    color: colors[2]
+                                                }]
+                                            }]
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+</script>
+</body>
+</html>

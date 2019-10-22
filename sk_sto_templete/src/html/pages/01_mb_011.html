@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap">
+    @@include('../include/header.html')
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_password">
+            <div class="row">
+                <div class="col s12 ">
+                    <div class="card">
+                        <div class="card-content">
+                            <!--2019-09-25 : 문구 삭제-->
+                            <div class="row">
+                                <div class="col s12">
+                                    <!-- PB-006 문구 추가 -->
+                                    <p class="card-title">Let's reset your password</p>
+                                    <p>Enter your email address associated with Potens.</p>
+                                    <!-- //PB-006 문구 추가 -->
+                                </div>
+                            </div>
+                            <div class="row row-mb-lg-2">
+                                <div class="input-field col s12">
+                                    <!-- PB-006 툴팁 제거 -->
+                                    <input type="text" id="email" value="">
+                                    <!-- //PB-006 툴팁 제거 -->
+                                    <label for="email">Email adress</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <a href="#" class="btn btn-block btn-large">Continue</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+    @@include('../include/footer.html')
+</div>
+<style>
+    .page_password .title {
+        font-size: 32px;
+        line-height: 48px;
+        color: #333333;
+        padding-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .page_password .title span {
+                font-family: var(--font);
+        font-weight: 700;
+        color: #2e3ca8;
+    }
+    /*2019-09-25 : 마진 수정*/
+    .page_password .card {
+        position: relative;
+        width: 440px;
+        margin: 165px auto 84px;
+    }
+    /*//2019-09-25 : 마진 수정*/
+    .page_password .card .card-content {
+        padding: 42px 40px 22px;
+    }
+
+    .page_password .card .card-title {
+        color: #2E3CA8;
+        font-size: 20px;
+        margin-bottom: 19px;
+    }
+</style>
+</body>
+</html>
+
+

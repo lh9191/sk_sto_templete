@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html', {
+"folder" : "guide"
+})
+<body>
+<div id="wrap">
+    <div id="container" class="container">
+        <div class="page_guide">
+            <div id="contents" class="contents">
+                <h1 class="title">component : Form</h1>
+                <h2 class="title_sub">checkbox </h2>
+                <div class="area area_guide">
+                    <p class="desc">체크박스는 class="filled-in"를 사용한다.</p>
+                    <p class="desc">checked 상태는 checked="checked"</p>
+                    <p class="desc">disabled 상태는 disabled="disabled"</p>
+                    <div class="component">
+                        <div class="row">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>checkbox filled-in </span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label>
+                                <input type="checkbox" class="filled-in" checked="checked"/>
+                                <span>checkbox filled-in checked</span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label>
+                                <input type="checkbox" class="filled-in" disabled="disabled"/>
+                                <span>checkbox filled-in disabled</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="title_sub">radio </h2>
+                <div class="area area_guide">
+                    <p class="desc">체크박스는 class="with-gap"를 사용한다.</p>
+                    <p class="desc">checked 상태는 checked="checked"</p>
+                    <p class="desc">disabled 상태는 disabled="disabled"</p>
+                    <div class="component">
+                        <div class="row">
+                            <label>
+                                <input class="with-gap" name="group3" type="radio"  />
+                                <span>Radio</span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label>
+                                <input class="with-gap" name="group3" type="radio" checked="checked" />
+                                <span>Radio checked</span>
+                            </label>
+                        </div>
+                        <div class="row">
+                            <label>
+                                <input class="with-gap" name="group3" type="radio" disabled="disabled" />
+                                <span>Radio disabled</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

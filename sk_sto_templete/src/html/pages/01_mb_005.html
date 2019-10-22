@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap wrap_white">
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="bg_contents">
+        <div id="contents" class="contents page_step">
+            <div class="flow">
+                <div class="title">Identity Verification</div>
+                <a href="#" class="page_back"></a>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <!-- PB-018 step 명칭 변경-->
+                        <div class="step">
+                            <div class="step-item step-first">
+                                <i class="circle on"></i>
+                                <span>Profile</span>
+                            </div>
+                            <div class="step-item step-3-2">
+                                <i class="circle off"></i>
+                                <span>Verification</span>
+                            </div>
+                            <div class="step-item step-last">
+                                <i class="circle off"></i>
+                                <span>Fnish</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-form-title first">Basic Infomation</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="institution" value="">
+                            <label for="institution">Institution Name</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="licensenumber" value="">
+                            <label for="licensenumber">Business License number</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                            <label for="textarea2">Description</label>
+                            <span class="character-counter" style="float: right; font-size: 12px;"></span>
+                        </div>
+                    </div>
+                    <div class="row row-mb-md">
+                        <div class="input-field col s6">
+                            <input type="text" id="licensenumber2" value="">
+                            <label for="licensenumber2">Official Website</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <p class="title-sm">Required Document</p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot prefix-dot"></i>Copy of Business License</p>
+                        </div>
+                        <div class="file-field input-field col s6">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text">
+                            </div>
+                            <div class="check">
+                                <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px" height="15px"
+                                     viewBox="0 0 27.708 21.553" enable-background="new 0 0 27.708 21.553"
+                                     xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "></polyline>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot prefix-dot">Constitution</p>
+                        </div>
+                        <div class="file-field input-field col s6">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text">
+                            </div>
+                            <div class="check">
+                                <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px" height="15px"
+                                     viewBox="0 0 27.708 21.553" enable-background="new 0 0 27.708 21.553"
+                                     xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "></polyline>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot prefix-dot">Business Plan</p>
+                        </div>
+                        <div class="file-field input-field col s6">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text">
+                            </div>
+                            <div class="check">
+                                <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px" height="15px"
+                                     viewBox="0 0 27.708 21.553" enable-background="new 0 0 27.708 21.553"
+                                     xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "></polyline>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot prefix-dot">Proof of other various projects</p>
+                        </div>
+                        <div class="file-field input-field col s6">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text">
+                            </div>
+                            <div class="check">
+                                <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px" height="15px"
+                                     viewBox="0 0 27.708 21.553" enable-background="new 0 0 27.708 21.553"
+                                     xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "></polyline>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot prefix-dot">Statement of Purpose</p>
+                        </div>
+                        <div class="file-field input-field col s6">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text">
+                            </div>
+                            <div class="check">
+                                <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px" height="15px"
+                                     viewBox="0 0 27.708 21.553" enable-background="new 0 0 27.708 21.553"
+                                     xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "></polyline>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <p class="bu-dot prefix-dot">Sources of Funds</p>
+                        </div>
+                        <div class="file-field input-field col s6">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path" type="text">
+                            </div>
+                            <div class="check">
+                                <svg id="fileCheck" class="fileCheck" x="0px" y="0px" width="20px" height="15px"
+                                     viewBox="0 0 27.708 21.553" enable-background="new 0 0 27.708 21.553"
+                                     xml:space="preserve">
+                                        <polyline fill="none" stroke="#07B87F" stroke-width="4" stroke-miterlimit="10"
+                                                  points="1.748,11.527 8.342,18.121 25.96,1.977 "></polyline>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Bank infomation-->
+                    <div class="row row-mb-md">
+                        <div class="col s12">
+                            <div class="card-form-title">Bank infomation</div>
+                        </div>
+                        <div class="col s12">
+                            <p>Please provide us with your banking account details. The information will be used to
+                                confirm your payment.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="bankname" value="">
+                            <label for="bankname">Bank Name</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="bankswiftcode" value="">
+                            <label for="bankswiftcode">Bank SWIFT Code</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="bankaddress" value="">
+                            <label for="bankaddress">Bank Address</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="accountholder" value="">
+                            <label for="accountholder">Account Holder</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="routingnumber" value="">
+                            <label for="routingnumber">Routing Number</label>
+                            <span class="helper-text" data-error="error massage"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row row-large">
+                        <p class="col s12 center-align">By continuing, you agree to POTENT Platform <a href="04_tm_001.html">Conditions of Use</a> and <a href="04_tm_002.html">Privacy Notice.</a></p>
+                    </div>
+                    <div class="row row-large">
+                        <div class="col s12 center-align">
+                            <p><a href="#" class="btn btn-large">Next</a></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+</div>
+<style>
+    .user-list {
+        position: relative;
+    }
+
+    .user-list .list {
+        margin-bottom: 20px;
+        height: 120px;
+        border: solid 1px #c5c5c5;
+        background-color: #fbfbff;
+        position: relative;
+    }
+
+    .user-list .list .name {
+        position: absolute;
+        top: 27px;
+        left: 30px;
+    }
+
+    .user-list .list .name a {
+        font-size: 24px;
+        color: #2e3ca8;
+        text-decoration: underline;
+    }
+
+    .user-list .list .desc {
+        position: absolute;
+        top: 27px;
+        right: 100px;
+    }
+
+    .user-list .list .desc span {
+        font-size: 22px;
+        line-height: 25px;
+        text-align: right;
+        color: #333333;
+    }
+
+    .user-list .list .desc span:before {
+        content: '';
+        display: inline-block;
+        height: 20px;
+        border-left: 1px solid #C5C5C5;
+        margin-right: 5px;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+
+    .user-list .list .desc span:first-child:before {
+        display: none;
+    }
+
+    .user-list .list .address {
+        position: absolute;
+        bottom: 27px;
+        left: 30px;
+        font-size: 22px;
+        color: #333333;
+    }
+
+    .user-list .list .btn-remove {
+        position: absolute;
+        top: 45px;
+        right: 44px;
+    }
+
+    .user-list .list .btn-remove a i {
+        font-size: 30px;
+        color: #333333;
+    }
+
+    .add-user {
+        border-top: 2px solid #2e3ca8;
+        border-bottom: 2px solid #2e3ca8;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+
+</style>
+</body>
+</html>
+
+

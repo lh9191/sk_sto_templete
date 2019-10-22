@@ -1,0 +1,48 @@
+.pagination {
+    text-align: center;
+    padding: 15px 0 15px;
+
+    & li {
+        border: solid 1px transparent;
+        border-radius: 6px;
+        & a {
+            width: 30px;
+            height: 30px;
+            padding: 0 10px 0 8px;
+            font-size: 14px;
+            & .fa-chevron-left{
+                position: relative;
+                left: -1px;
+            }
+            & .fa-chevron-right{
+                position: relative;
+                left: 1px;
+            }
+        }
+        &.active {
+            width: 30px;
+            height: 30px;
+            border: solid 1px #d8d8d8;
+            background-color: var(--color-point);
+            & a {
+                color: #ffffff;
+            }
+        }
+        &.arrow {
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            border: solid 1px #b8b8b8;
+            background-color: #ffffff;
+
+            & i {
+                font-size: 16px;
+                color: #666666;
+            }
+        }
+    }
+}
+
+
+
+

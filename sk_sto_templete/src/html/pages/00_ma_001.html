@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<div id="wrap" class="wrap wrap_white ">
+    @@include('../include/header.html')
+    <!-- module : contents - 페이지 별 분리 영역-->
+    <div class="page_main">
+        <div class="area puzzle">
+            <div class="bg_puzzle"></div>
+            <div class="text">
+                <div class="tit">Digitize Your Asset!<br>
+                    Expand Your Potential!</div>
+                <div class="tit_sub">You can issue securities on Potens,<br>
+                    then Potens will do the rest.<br>
+                    Reach your full potential with Potens.</div>
+            </div>
+        </div>
+        <div class="area area_gray why">
+            <div class="part">Why Choose Potens?</div>
+            <div class="list">
+                <div class="box box1">
+                    <div class="subject">Liquidity</div>
+                    <div class="desc">Transform illiquid assets<br>
+                        into liquid, tradable assets.<br>
+                        Unlock 10-trillion-dollar markets!</div>
+                </div>
+                <div class="box box2">
+                    <div class="subject">Accessibility</div>
+                    <div class="desc">Access exclusive<br>
+                        investment opportunities with<br>
+                        a small budget.</div>
+                </div>
+                <div class="box box3">
+                    <div class="subject">Convenience</div>
+                    <div class="desc">Provide you with an<br>
+                        all-in-one tool to manage<br>
+                        securities.</div>
+                </div>
+                <div class="box box4">
+                    <div class="subject">Reliability</div>
+                    <div class="desc">Control access with thorough<br>
+                        screening.<br>
+                        Explore investment options<br>
+                        verified by experts.</div>
+                </div>
+                <div class="box box5">
+                    <div class="subject">Fractional<br>
+                        Ownership</div>
+                    <div class="desc">Diversify your portfolios<br>
+                        and reduce risks.</div>
+                </div>
+            </div>
+        </div>
+        <div class="area workflow">
+            <div class="part">How it works</div>
+            <div class="box_flow">
+                <div class="flow">
+                    <div class="img"><img src="../../img/common/bg_main_step1.png"></div>
+                    <div class="tit"> Step 1.<br>
+                        Create an Account</div>
+                    <div class="desc">Create your login credentials<br>
+                        and choose your account type.</div>
+                </div>
+                <div class="flow">
+                    <div class="img"><img src="../../img/common/bg_main_step2.png"></div>
+                    <div class="tit"> Step 2.<br>
+                        Verify Your Identity</div>
+                    <div class="desc">Submit your KYC/AML<br>
+                        application as required.<br>
+                        Your application can vary<br>
+                        depending on your account type.</div>
+                </div>
+                <div class="flow">
+                    <div class="img"><img src="../../img/common/bg_main_step3.png"></div>
+                    <div class="tit"> Step 3.<br>
+                        Expand Your Potential</div>
+                    <div class="desc">Issuers can raise capital<br>
+                        based on their approved asset,<br>
+                        and investors can own<br>
+                        a small fraction of a priceless asset.</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- //module : contents - 페이지 별 분리 영역-->
+    @@include('../include/footer.html')
+</div>
+
+<style>
+    .page_main .area {
+        height: 800px;
+        position: relative;
+        background-color: #fff;
+    }
+    .page_main .area.area_gray {
+        background-color: #F8F8F8;
+    }
+
+    /* section1 */
+    .page_main .area.puzzle {
+        background-image:url("../../img/common/bg_main_mount.png");
+        background-position: calc(50% + 140px) 205px;
+        background-repeat: no-repeat;
+    }
+    .page_main .area .bg_puzzle {
+        background:url("../../img/common/bg_main_illust.png");
+        width: 694px;
+        height: 379px;
+        line-height: 0;
+        position: absolute;
+        left: 50%;
+        margin-left: -94px;
+        top: 356px;
+    }
+    .page_main .area .text {
+        width: 562px;
+        position: absolute;
+        left: 50%;
+        margin-left: -500px;
+        top: 230px;
+    }
+    .page_main .area .text .tit{
+                font-family: var(--font);
+        font-weight: 700;
+        line-height: 60px;
+        font-size: 48px;
+        color: #2E3CA8;
+        margin-bottom: 40px;
+    }
+    .page_main .area .text .tit_sub{
+        line-height: 38px;
+        font-size: 24px;
+        color: #333333;
+    }
+    .page_main .why .part {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        width: 500px;
+        text-align: center;
+        margin-left: -250px;
+                font-family: var(--font);
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        color: #2E3CA8;
+    }
+    .page_main .why .list {
+        width: 1000px;
+        height: 500px;
+        background: url("../../img/common/bg_main_list.png") center top no-repeat;
+        position: absolute;
+        left: 50%;
+        margin-left: -500px;
+        top: 206px;
+    }
+    .page_main .why .list .box{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        width: 260px;
+        text-align: center;
+    }
+    .page_main .why .list .box1{
+        left: 43px;
+        top: 105px;
+    }
+    .page_main .why .list .box2{
+        left: 373px;
+        top: 105px;
+    }
+    .page_main .why .list .box3{
+        left: 700px;
+        top: 105px;
+    }
+    .page_main .why .list .box4{
+        left: 208px;
+        top: 265px;
+    }
+    .page_main .why .list .box5{
+        left: 535px;
+        top: 265px;
+    }
+
+
+
+    .page_main .why .list .box .subject {
+        color: #ffffff;
+                font-family: var(--font);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .page_main .why .list .box .desc {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .page_main .workflow .part {
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        width: 500px;
+        text-align: center;
+        margin-left: -250px;
+                font-family: var(--font);
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 48px;
+        color: #2E3CA8;
+    }
+    .page_main .workflow .box_flow{
+        position: absolute;
+        width: 1100px;
+        height: 350px;
+        top: 315px;
+        left: 50%;
+        margin-left: -550px;
+    }
+    .page_main .workflow .box_flow::before{
+        content: '';
+        position: absolute;
+        left: 260px;
+        top: 70px;
+        width: 170px;
+        height: 10px;
+        background: url("../../img/common/bg_main_dots.png") no-repeat 0 0;
+    }
+    .page_main .workflow .box_flow::after{
+        content: '';
+        position: absolute;
+        right: 260px;
+        top: 70px;
+        width: 170px;
+        height: 10px;
+        background: url("../../img/common/bg_main_dots.png") no-repeat 0 0;
+    }
+
+
+    .page_main .workflow .box_flow .flow{
+        width: 285px;
+        float: left;
+        margin-left: 122px;
+        text-align: center;
+    }
+    .page_main .workflow .box_flow .flow:first-child{
+        margin-left: 0;
+    }
+
+    .page_main .workflow .box_flow .flow .img{
+        margin-bottom: 15px;
+    }
+    .page_main .workflow .box_flow .flow .tit{
+        font-family: var(--font);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 33px;
+        color: #333333;
+    }
+    .page_main .workflow .box_flow .flow .desc{
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+    }
+</style>
+</body>
+</html>
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+@@include('../include/head.html')
+<body>
+<!--팝업-->
+<div class="dim-fixed"></div>
+<div class="popup_wrap" style="display: block;">
+	<div class="popup">
+		<div class="popup_header">Bank Information<a href="#" class="btn-close"><i class="fal fa-times"></i><span class="visually_hidden">close</span></a>
+		</div>
+		<div class="popup_body popup_body_pd clearfix">
+			<div id="asset" class="panel dl-horizon align-right">
+				<div class="row">
+					<div class="col s12 spec">
+						<span class="title">Bank SWIFT Code</span>
+						<span class="desc">GB82 WEST 1234 5678 32</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 spec">
+						<span class="title">Bank Address</span>
+						<span class="desc">University Of Arkansas, 703 W Dickson St, Fayetteville, AR 72701. USA</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 spec">
+						<span class="title">Bank Name</span>
+						<span class="desc">Bank of America </span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 spec">
+						<span class="title">Balance Due</span>
+						<span class="desc">10 <span class="light">SGD(10 LIM)</span>  </span>
+					</div>
+				</div>
+				<div class="row row-large">
+					<div class="col s12 center-align">
+						<p><a href="#" class="btn btn-large">Confirm</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<style>
+	.popup .popup_body {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	
+	.popup .popup_body_pd {
+		padding: 40px 30px 20px;
+	}
+	
+	.spec .title {
+		float: left;
+		line-height: 47px;
+		width: 180px;
+	}
+	
+	.spec .desc {
+		float: left;
+		text-align: left;
+	}
+
+
+</style>
+</body>
+</html>
+
+
